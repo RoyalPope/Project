@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<link rel="stylesheet" href="multi-step.css">
+<title>Check Up</title>
+</head>
+<body>
+
+<form id="regForm" action="">
+  <h1>Levels of Depression</h1>
+  <!-- One "tab" for each step in the form: -->
+    <div class="tab"><b>Mild depression</b>
+    <p>Advices To Consider</p>
+    <p>1. Reach out for support: Talk to someone you trust about what you're going through. Sharing your feelings can provide relief and
+         emotional support. Consider confiding in a friend, family member, or therapist.</p>
+    <p>2. Engage in self-care activities: Prioritize self-care to support your well-being. Take time for activities you en
+        joy, practice relaxation techniques like deep breathing or mindfulness, ensure you're getting enough sleep, and maintain a balanced diet.</p>
+  </div>
+    <div class="tab"><b>Moderate depression</b>
+    <p>Advices To Consider</p>
+    <p>1.  Seek professional help: Consider reaching out to a mental health 
+        professional, such as a therapist or counselor. They can provide guidance, support, and therapy options that are tailored to your needs.</p>
+    <p>2. Establish a routine and set small goals: Creating a structured routine and setting achievable
+         goals can help provide a sense of purpose and accomplishment. Break tasks into manageable steps and celebrate each small achievement.</p>
+    </div>
+    <div class="tab"><b>Severe depression</b>
+    <p>Advices To Consider</p>
+    <p>1. Urgently seek professional assistance: If you're experiencing severe symptoms, it's crucial to seek immediate professional help. Contact a mental
+         health hotline, your healthcare provider, or go to the nearest emergency room. They can provide appropriate support and intervention.</p>
+    <p>2. Enlist a support system: Reach out to trusted individuals in your life, such as friends or family members, and let them know about your struggles. Ask for their support and 
+        assistance in accessing professional help. Having a support network can make a significant difference in navigating severe depression.</p>
+        </div>
+    <div class="tab"><b>Recurrent Depression</b>
+    <p>Advices To Consider</p>
+    <p>1. Maintenance treatment: If you have a history of recurrent depression, consider maintenance treatment. Work with your mental health professional to develop a plan that may involve 
+        continued therapy, medication, lifestyle adjustments, and self-care practices to help prevent future episodes or reduce their severity.</p>
+    <p>2. Develop coping strategies: Learn and implement coping strategies that have been helpful for you in managing depressive symptoms. This may include practicing mindfulness, engaging 
+        in regular exercise, pursuing hobbies, maintaining a strong support network, and seeking professional support during challenging times.</p>
+    </div>
+    <div class="tab"><b>Treatment-Resistant Depression</b>
+    <p>Advices To Consider</p>
+    <p>1.  Explore alternative treatments: Consult with a mental health professional experienced in treating treatment-resistant depression. They may recommend alternative treatment options such as different medications, non-traditional therapies 
+        (e.g., transcranial magnetic stimulation, ketamine infusion therapy), or clinical trials that could potentially help alleviate symptoms.</p>
+    <p>2. Consider psychotherapy options: Explore different psychotherapy approaches such as cognitive-behavioral therapy (CBT), dialectical behavior therapy (DBT),
+     or interpersonal therapy (IPT). These therapies may offer additional tools and strategies to manage treatment-resistant depression.</p>
+    </div>
+    <div class="tab"><b>Psychotic Depression</b>
+    <p>Advices To Consider</p>
+    <p>1. Medication and therapy combination: Psychotic depression often requires a combination of medication and therapy. Collaborate with a mental health professional who can prescribe appropriate 
+        medication to address the psychotic features, along with therapy to address the depressive symptoms and support overall recovery</p>
+    <p>2. Social support and monitoring: Surround yourself with a supportive network of friends and family who can provide understanding and assistance during difficult times. Additionally,
+         regular monitoring and follow-up with mental health professionals are important to ensure appropriate management of symptoms.</p>
+    </div>
+    <div class="tab"><b>Postpartum Depression</b>
+    <p>Advices To Consider</p>
+    <p>1. Reach out for support: Talk to your healthcare provider, a therapist, or a support group 
+        specializing in postpartum depression. They can offer guidance, emotional support, and resources to navigate this challenging period</p>
+    <p>2.  Self-care and self-compassion: Prioritize self-care activities that promote your well-being. This may include ensuring adequate rest, practicing relaxation 
+        techniques, seeking assistance with childcare, engaging in enjoyable activities, and being gentle and compassionate with yourself.</p>
+    </div>
+    <div class="tab"><b>Seasonal Affective Disorder (SAD)</b>
+    <p>Advices To Consider</p>
+    <p>1.  Light therapy: Consider using a light therapy box, which emits 
+        bright light that mimics natural sunlight. Light therapy can help regulate your body's internal clock and alleviate symptoms of SAD.</p>
+    <p>2. Maximize exposure to natural light: Make an effort to spend time outdoors during daylight hours, even on cloudy days. Open curtains or
+         blinds to allow natural light into your living and workspace. Increasing exposure to natural light can have a positive impact on mood.</p>
+    </div>
+  <div style="overflow:auto;">
+    <div style="float:right;">
+      <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+      <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+    </div>
+  </div>
+  <!-- Circles which indicates the steps of the form: -->
+  <div style="text-align:center;margin-top:40px;">
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+  </div>
+</form>
+
+<script src="multi-step.js"></script>
+
+</body>
+</html>
