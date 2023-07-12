@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #eeefff;
+    font-family: sans-serif;
+}
+.logo img{
+    /* box-sizing: border-box; */
+    position: absolute;
+    top: 3%;
+    left: 2%;
+    cursor: pointer;
+    width: 5%;
+  }
+  nav ul{
+    position: absolute;
+    top: 3%;
+    right: 5%;
+    grid-gap: 20px;
+    list-style: none;
+    display: inline-flex;
+    font-weight: bold;
+    font-family: Raleway;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  a:hover{
+    color: #9293b2;
+    font-family: Arial Black;
+  }
+  .container .about{
+    margin-top: 10%;
+    text-align: center;
+  }
+  .par1{
+    position: absolute;
+    top: 33%;
+    left: 19%;
+  }
+  .par2{
+    position: absolute;
+    top:77%;
+    left:19%;
+  }
+  .par3{
+    position: absolute;
+    top:33%;
+    right:19%;
+  }
+  .par4{
+    position: absolute;
+    top:77%;
+    right:19%;
+  }
+  .par{
+    width: 30%;
+    text-align: justify;
+
+  }
+  .card{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+    box-shadow: 0 0 15px black;
+}
+.card1{
+    background-image: url(POPE.png);
+    position: absolute;
+    top: 30%;
+    left: 2%
+}
+.card2{
+    position: absolute;
+    top: 74%;
+    left: 2%;
+    background-image: url(POPE.png);
+}
+.card3{
+    background-image: url(POPE.png);
+    position: absolute;
+    top: 30%;
+    right: 2%;
+}
+.card4{
+    position: absolute;
+    top: 74%;
+    right: 2%;
+    background-image: url(POPE.png);
+}
+.button {
+    border-radius: 4px;
+    background-color: #9293b2;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  .button:hover{
+    background-color: #4c4d61;
+  }
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }

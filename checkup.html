@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<link rel="stylesheet" href="checkup.css">
+<title>Check Up</title>
+</head>
+<body>
+<div class="logo">
+  <img src="logob.png" alt="">
+</div>
+<nav>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+<form id="regForm" action="" method="POST">
+  <h1>QUICK CHECK UP😉</h1>
+  <!-- One "tab" for each step in the form: -->
+    <div class="tab"><b>QUESTION 1</b>
+    <p>1.Over the past two weeks, have you been feeling down, depressed, or hopeless</p><br>
+       YES <input type="radio" value="Yes" name="s1">
+        NO <input type="radio" value="No" name="s1">
+</div>
+    <div class="tab"><b>QUESTION 2</b>
+        <p>2.Have you experienced a loss of interest or pleasure in activities you previously enjoyed?</p><br>
+        YES <input type="radio" value="Yes" name="s2">
+        NO <input type="radio" value="No" name="s2">    
+    </div>
+    <div class="tab"><b>QUESTION 3</b>
+        <p>3.Have you noticed significant changes in your appetite or weight recently?</p><br>
+            YES <input type="radio" value="Yes" name="s3">
+            NO <input type="radio" value="No" name="s3"> </div>
+            <div class="tab"><b>QUESTION 4</b>
+                <p>4.Have you been struggling with insomnia or hypersomnia (excessive sleepiness)?</p><br>
+                    YES <input type="radio" value="Yes" name="s4">
+                    NO <input type="radio" value="No" name="s4">     </div>
+                    <div class="tab"><b>QUESTION 5</b>
+                        <p>5.Do you feel fatigued or lacking in energy most days?</p><br>
+                            YES <input type="radio" value="Yes" name="s5">
+                            NO <input type="radio" value="No" name="s5">     </div>
+                            <div class="tab"><b>QUESTION 6</b>
+                                <p>6.Have you experienced feelings of worthlessness or excessive guilt?</p><br>
+                                    YES <input type="radio" value="Yes" name="s6">
+                                    NO <input type="radio" value="No" name="s6">     </div>
+                                    <div class="tab"><b>QUESTION 7</b>
+                                        <p>7.Have you had difficulty concentrating, making decisions, or experiencing a noticeable decline in your ability to think clearly?</p><br>
+                                            YES <input type="radio" value="Yes" name="s7">
+                                            NO <input type="radio" value="No" name="s7">     </div>
+                        <div class="tab"><b>QUESTION 8</b>
+                        <p>8.Have you had recurring thoughts of death or suicide?</p><br>
+                            YES <input type="radio" value="Yes" name="s8">
+                            NO <input type="radio" value="No" name="s8">     </div>
+                            <div class="tab"><b>QUESTION 9</b>
+                                <p>9.Have you noticed any physical symptoms such as aches, pains, or digestive issues without a clear medical cause?</p><br>
+                                    YES <input type="radio" value="Yes" name="s9">
+                                    NO <input type="radio" value="No" name="s9">     </div>
+                                    <div class="tab"><b>QUESTION 10</b>
+                                        <p>10.Have you noticed a significant decrease or increase in your activity level?</p><br>
+                                            YES <input type="radio" value="Yes" name="s10">
+                                            NO <input type="radio" value="No" name="s10">     </div>
+  <div style="overflow:auto;">
+    <div style="float:right;">
+      <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+      <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+    </div>
+  </div>
+  <!-- Circles which indicates the steps of the form: -->
+  <div style="text-align:center;margin-top:40px;">
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+  </div>
+</form>
+
+<script src="multi-step.js"></script>
+
+</body>
+</html>
